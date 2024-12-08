@@ -1,0 +1,20 @@
+clear; close all; clc; format long g ; 
+load init1.mat
+load init2.mat
+
+[~, init1,init2] = vehicle_dimensions(init1, init2) ; 
+init1 = plot_rocket_body(init1) ; 
+
+init1 = firstStage(init1); 
+init1 = simulate_gravity_turn_v2(init1);
+
+init2 = secondStage(init1, init2) ; 
+init2 = simulate_gravity_turn_v2(init2) ;
+
+init1.body.stored = init1.body.full_boundary; 
+
+init1.gif_name = "Stage1Trajectory" ; 
+init2.gif_name = "Stage1Trajectory" ; 
+
+gif_generator_2D(init1)
+

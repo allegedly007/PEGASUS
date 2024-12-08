@@ -7,3 +7,5 @@ Statement: I, Liam Hunte, affirm that I am the original author of this code libr
 Coursework: AE441 Senior Rocket Propulsion Preliminary Design
 
 Institution: Embry-Riddle Aeronautical University, Daytona Beach, FL, College of Engineering, Aerospace Engineering Department
+
+Code Dependencies (PEGASUS_PDR): Install the "intersections" MATLAB Add-On required for the Blunted Von Karman Ogive Calculation
